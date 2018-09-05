@@ -1,0 +1,12 @@
+{
+    "name": "vanessa/nombre-mystere-test",
+    "authors": [
+        {
+            "name": "Vanoux",
+            "email": "vanessa.roux891@orange.fr"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^7.3"
+    }
+}
