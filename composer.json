@@ -8,6 +8,11 @@
     ],
     "require": {
         "phpunit/phpunit": "^7.3"
+    },
+    "scripts": {
+        "tests" : "./vendor/bin/phpunit tests",
+        "serveur" : "php -S localhost:8000"
+
     }
     
 }

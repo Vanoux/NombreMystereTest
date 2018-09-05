@@ -16,6 +16,9 @@ public function setUp(){
   public function testRandomValue(){
       $this->assertInternalType('integer', $this->truc->getRandom());
   }
+  public function testResultValue(){
+    $this->assertNotEquals('number', 'random');
+}
 
 }
 ?>
