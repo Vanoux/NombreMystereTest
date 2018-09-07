@@ -5,34 +5,32 @@ class Mystere
 {
     protected $random;
     protected $number;
+    protected $count;
 
     public function __construct()
     {
         $this->random = random_int(0, 9);
+        $this->count = 3;
+        $this->$number = '<script type="text/javascript">prompt("Entrez un nombre entre 0 et 9 ", "<Entrez ici votre réponse>");</script>';
     }
 
-    public function getRandom(){
-        return $this->random;
-    }
 
     public function getResult(){
-        if ($this->random === $this->number){
-            return "Gagné !";
+        if ($this->count < 1){
+            return "Perdu !";
         }
-        else if ($this->random < $this->number){
+        if ($this->random < $number){
             return "Trop grand, retente !";
         }
-        else if ($this->random > $this->number){
+        if ($this->random > $number){
             return "Trop petit, retente !";
+        }
+        if ($this->random == $number){
+            return "Gagné !";
         }
     }
     
    
 }
-
- // public function mystere()
-    // {
-    //     $number = random_int(0, 9);
-    //     return $number;
-    // }
 ?>
+

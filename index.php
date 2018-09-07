@@ -17,7 +17,6 @@
     $myNb = new Mystere;
     
     echo'<script type="text/javascript">prompt("Entrez un nombre entre 0 et 9 ", "<Entrez ici votre réponse>");</script>';
-    echo $myNb->getRandom() . '<br>';
     echo $myNb->getResult() . '<br>';
     
  ?>

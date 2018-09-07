@@ -14,11 +14,12 @@ public function setUp(){
       $this->assertClassHasAttribute('random', Mystere::class);
   }
   public function testRandomValue(){
-      $this->assertInternalType('integer', $this->truc->getRandom());
+      $this->assertInternalType('integer', $this->truc->getResult());
   }
   public function testResultValue(){
-    $this->assertNotEquals('number', 'random');
+    $this->assertNotEquals('count', 'random');
 }
 
 }
+
 ?>
